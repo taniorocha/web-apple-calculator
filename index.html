@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Apple Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input class="result" value="0" disabled />
+        <table class="buttons">
+            <tr>
+                <td>
+                    <div class="button button-grey">
+                        <button class="btn btn_AC" value="AC">AC</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-grey">
+                        <button class="btn btn_+/-" value="+/-">
+                            <svg width="12.204487mm" height="10.75758mm" viewBox="0 0 12.204487 10.75758" version="1.1"
+                                id="svg1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:svg="http://www.w3.org/2000/svg">
+                                <defs id="defs1" />
+                                <g id="layer1" transform="translate(-170.83458,-137.65049)">
+                                    <rect style="fill:#000000;stroke-width:0.975;stroke-dasharray:0.975, 0.975"
+                                        id="rect2" width="1.162421" height="4.1976314" x="172.35219" y="138.23976" />
+                                    <rect style="fill:#000000;stroke-width:0.975;stroke-dasharray:0.975, 0.975"
+                                        id="rect2-2" width="1.162421" height="4.1976314" x="139.75737" y="-175.03221"
+                                        transform="rotate(90)" />
+                                    <rect style="fill:#000000;stroke-width:0.975;stroke-dasharray:0.975, 0.975"
+                                        id="rect2-2-7" width="1.162421" height="4.1976314" x="145.25189" y="-183.03906"
+                                        transform="rotate(90)" />
+                                    <path style="fill:#000000;stroke-width:0.975;stroke-dasharray:0.975, 0.975"
+                                        d="m 172.94009,148.36131 c 0.0935,-0.14031 6.82873,-10.71082 6.82873,-10.71082 h 1.28624 l -6.78197,10.75759 z"
+                                        id="path3" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-grey">
+                        <button class="btn btn_%" value="%">
+                            <span class="material-symbols-outlined">
+                                percent
+                            </span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-orange">
+                        <button class="btn btn_/" value="/" style="font-size: 40px;">
+                            ÷
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_7" value="7">7</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_8" value="8">8</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_9" value="9">9</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-orange">
+                        <button class="btn btn_X" value="*">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_4" value="4">4</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_5" value="5">5</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_6" value="6">6</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-orange">
+                        <button class="btn btn_-" value="-">
+                            <span class="material-symbols-outlined">
+                                remove
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_1" value="1">1</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_2" value="2">2</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_3" value="3">3</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-orange">
+                        <button class="btn btn_+" value="+">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="wider" colspan="2">
+                    <div class="button">
+                        <button class="btn btn_0" value="0">0</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <button class="btn btn_," value=",">,</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="button button-orange no-focus">
+                        <button class="btn btn_=" value="=">
+                            <span class="material-symbols-outlined">
+                                equal
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
